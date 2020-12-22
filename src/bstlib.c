@@ -100,6 +100,11 @@ struct node* removeNode(struct node* root, int key) {
     return root;
 }
 
+void destroyNode(struct node** root) {
+    free(*root);
+    *root = NULL;
+}
+
 int countNodes(struct node* root) {
     if (root == NULL) {
         return 0;
