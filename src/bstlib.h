@@ -10,7 +10,7 @@ struct node {
     struct node* right;
 };
 
-struct node* createNewNode(int item);
+struct node* createNewNode(int key);
 struct node* insertNewNode(struct node* root, int key);
 struct node* searchNode(struct node* root, int key);
 struct node* removeNode(struct node* root, int key);

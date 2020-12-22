@@ -6,10 +6,10 @@ static void printBinaryTree(struct node* root);
 static struct node* findNode(struct node* root, int key, struct node** parent);
 
 
-struct node* createNewNode(int item) {
+struct node* createNewNode(int key) {
     struct node* n = (struct node*)malloc(sizeof(struct node));
     
-    n->key = item;
+    n->key = key;
     n->left = NULL;
     n->right = NULL;
 
